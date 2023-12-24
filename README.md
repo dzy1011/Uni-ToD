@@ -9,9 +9,16 @@
 
 ### Training
 
+```bash
+python train.py --dataset <dataset name>  --params_file config/gpt2/params.json --device cuda
+```
+
 ### Evaluation
+```bash
+python eval.py --generate <path to the saved model> --dataset <dataset name>  --generation_params_file config/gpt2/generation_params.json --eval_dataset test  --output_file <the path to output file>
+```
 
-
+Due to some stochastic factors(e.g., GPU and environment), it maybe need to slightly tune the hyper-parameters using grid search to reproduce the results reported in our paper. 
 
 
 ## Citation
@@ -21,7 +28,6 @@ If you use any source codes or the datasets included in this toolkit in your wor
 ```
 @inproceedings{,
     title = "From Retrieval to Generation: A Simple and Unified Generative Model for End-to-End Task-Oriented Dialogue",
-    author = "Zeyuan Ding, Zhihao Yang, Ling Luo, Yuanyuan Sun, Hongfei Lin",
     year = "2024",
     address = "",
     publisher = "",

@@ -6,8 +6,18 @@
 ## How to Run it
 
 ### Environment
+The environment configuration we used for training and testing is as follows:
+```
+transformers
+tensorboard
+nltk
+sentencepiece
+torch
+```
 
 ### Training
+
+The script train.py acts as a main function to the project, you can run the experiments by the following commands.
 
 ```bash
 python train.py --dataset <dataset name>  --params_file config/gpt2/params.json --device cuda
@@ -42,13 +52,15 @@ We are highly grateful for the public code of the following papers, our code is 
 
 - **DialoKG: Knowledge-Structure Aware Task-Oriented Dialogue Generation.**
 
-    NAACL 2022 paper. [[PDF]](https://aclanthology.org/2022.findings-naacl.195.pdf)
+   Md Rashad Al Hasan Rony, Ricardo Usbeck, Jens Lehmann
+
+   NAACL 2022 paper. [[PDF]](https://aclanthology.org/2022.findings-naacl.195.pdf) [[Code]](https://github.com/rashad101/DialoKG)
 
 
-- **Global-to-local Memory Pointer Networks for Task-Oriented Dialogue.**
+- **Q-TOD: A Query-driven Task-oriented Dialogue System.**
 
-    Chien-Sheng Wu, Richard Socher, Caiming Xiong.
+    Xin Tian, Yingzhan Lin, Mengfei Song, Siqi Bao, Fan Wang, Huang He, Shuqi Sun, Hua Wu.
 
-    ICLR 2019. [[Paper]](https://arxiv.org/abs/1901.04713) [[Open Reivew]](https://openreview.net/forum?id=ryxnHhRqFm) [[Code]](https://github.com/jasonwu0731/GLMP)
+    EMNLP 2022. [[Paper]](https://aclanthology.org/2022.emnlp-main.489.pdf) [[Code]](https://github.com/PaddlePaddle/Knover/tree/develop/projects/Q-TOD)
 
 

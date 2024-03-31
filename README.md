@@ -1,5 +1,7 @@
 # From Retrieval to Generation: A Simple and Unified Generative Model for End-to-End Task-Oriented Dialogue
 
+## We will update the code within two weeks
+
 
 ## Architecture
 

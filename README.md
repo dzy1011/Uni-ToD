@@ -1,8 +1,10 @@
 # From Retrieval to Generation: A Simple and Unified Generative Model for End-to-End Task-Oriented Dialogue
 
-This repository contains the official `PyTorch` implementation of the paper:
+This repository contains the official `PyTorch` implementation of AAAI 2024 paper:
 
-**From Retrieval to Generation: A Simple and Unified Generative Model for End-to-End Task-Oriented Dialogue.** AAAI 2024. [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/29745)
+**From Retrieval to Generation: A Simple and Unified Generative Model for End-to-End Task-Oriented Dialogue.** 
+
+AAAI 2024. [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/29745)
 
 ## We will update the code within two weeks
 
@@ -47,7 +49,7 @@ python eval.py --generate <path to the saved model> --dataset <dataset name>  --
 e.g. CUDA_VISIBLE_DEVICES=1 python eval.py --generate save/incar --dataset incar --generation_params_file config/gpt2/generation_params.json --eval_dataset test  --output_file output_incar.json
 ```
 
-Due to some stochastic factors(e.g., GPU and environment), it maybe need to slightly tune the hyper-parameters using grid search to reproduce the results reported in our paper. 
+Due to some stochastic factors(e.g., GPU and environment), it maybe need to slightly tune the hyper-parameters using grid search to reproduce the results reported in our paper. You can download the fine-tuned model from the following link [model_incar](https://ojs.aaai.org/index.php/AAAI/article/view/29745).
 
 
 ## Citation

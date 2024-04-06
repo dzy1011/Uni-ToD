@@ -1,9 +1,21 @@
 # From Retrieval to Generation: A Simple and Unified Generative Model for End-to-End Task-Oriented Dialogue
 
+This repository contains the official `PyTorch` implementation of the paper:
+
+[**From Retrieval to Generation: A Simple and Unified Generative Model for End-to-End Task-Oriented Dialogue**](https://ojs.aaai.org/index.php/AAAI/article/view/29745)
+
+
 ## We will update the code within two weeks
 
+## Abstract
+
+Retrieving appropriate records from the external knowledge base to generate informative responses is the core capability of end-to-end task-oriented dialogue systems (EToDs). Most of the existing methods additionally train the retrieval model or use the memory network to retrieve the knowledge base, which decouples the knowledge retrieval task from the response generation task, making it difficult to jointly optimize and failing to capture the internal relationship between the two tasks. In this paper, we propose a simple and unified generative model for task-oriented dialogue systems, which recasts the EToDs task as a single sequence generation task and uses maximum likelihood training to train the two tasks in a unified manner. To prevent the generation of non-existent records, we design the prefix trie to constrain the model generation, which ensures consistency between the generated records and the existing records in the knowledge base. Experimental results on three public benchmark datasets demonstrate that our method achieves robust performance on generating system responses and outperforms the baseline systems. 
 
 ## Architecture
+
+![image](imgs/model.png)
+
+The end-to-end model framework. Figure (a) is a part of the prefix trie, which is constructed from the knowledge base. Where ‘[SKG]’ represents the beginning of records in the knowledge base, and ‘[EKG]’ represents the end of records. Figure (b) is the overall flow of the model. When the language model generates the special token ‘[SKG]’, the language model generates related records under the constraints of the prefix trie. After the language model generates the special token ‘[EKG]’, the language model starts to generate the system response without constraint.
 
 ## How to Run it
 
@@ -38,14 +50,17 @@ Due to some stochastic factors(e.g., GPU and environment), it maybe need to slig
 If you use any source codes or the datasets included in this toolkit in your work, please cite the following paper. The bibtex are listed below:
 
 ```
-@inproceedings{,
-    title = "From Retrieval to Generation: A Simple and Unified Generative Model for End-to-End Task-Oriented Dialogue",
-    year = "2024",
-    address = "",
-    publisher = "",
-    url = "",
-
-}
+@article{Ding_Yang_Luo_Sun_Lin_2024,
+title={From Retrieval to Generation: A Simple and Unified Generative Model for End-to-End Task-Oriented Dialogue},
+volume={38},
+url={https://ojs.aaai.org/index.php/AAAI/article/view/29745},
+DOI={10.1609/aaai.v38i16.29745},
+number={16},
+journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+author={Ding, Zeyuan and Yang, Zhihao and Luo, Ling and Sun, Yuanyuan and Lin, Hongfei},
+year={2024},
+month={Mar.},
+pages={17907-17914} }
 ```
 
 ## Acknowledgement

@@ -34,11 +34,17 @@ The script train.py acts as a main function to the project, you can run the expe
 
 ```bash
 python train.py --dataset <dataset name>  --params_file config/gpt2/params.json --device cuda
+
+e.g. CUDA_VISIBLE_DEVICES=1 python train.py --dataset incar --params_file config/gpt2/params.json --device cuda
 ```
+
+dataset names: **incar**, **camrest**, **woz2.1** .
 
 ### Evaluation
 ```bash
 python eval.py --generate <path to the saved model> --dataset <dataset name>  --generation_params_file config/gpt2/generation_params.json --eval_dataset test  --output_file <the path to output file>
+
+e.g. CUDA_VISIBLE_DEVICES=1 python eval.py --generate save/incar --dataset incar --generation_params_file config/gpt2/generation_params.json --eval_dataset test  --output_file output_incar.json
 ```
 
 Due to some stochastic factors(e.g., GPU and environment), it maybe need to slightly tune the hyper-parameters using grid search to reproduce the results reported in our paper. 

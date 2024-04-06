@@ -2,8 +2,7 @@
 
 This repository contains the official `PyTorch` implementation of the paper:
 
-[**From Retrieval to Generation: A Simple and Unified Generative Model for End-to-End Task-Oriented Dialogue**](https://ojs.aaai.org/index.php/AAAI/article/view/29745)
-
+**From Retrieval to Generation: A Simple and Unified Generative Model for End-to-End Task-Oriented Dialogue.** AAAI 2024. [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/29745)
 
 ## We will update the code within two weeks
 
@@ -71,7 +70,7 @@ We are highly grateful for the public code of the following papers, our code is 
 
    Md Rashad Al Hasan Rony, Ricardo Usbeck, Jens Lehmann
 
-   NAACL 2022 paper. [[PDF]](https://aclanthology.org/2022.findings-naacl.195.pdf) [[Code]](https://github.com/rashad101/DialoKG)
+   NAACL 2022 paper. [[Paper]](https://aclanthology.org/2022.findings-naacl.195.pdf) [[Code]](https://github.com/rashad101/DialoKG)
 
 
 - **Q-TOD: A Query-driven Task-oriented Dialogue System.**

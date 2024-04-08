@@ -88,6 +88,8 @@ We are highly grateful for the public code of the following papers, our code is 
 
     EMNLP 2022. [[Paper]](https://aclanthology.org/2022.emnlp-main.489.pdf) [[Code]](https://github.com/PaddlePaddle/Knover/tree/develop/projects/Q-TOD)
 
-[[Blog]](https://kexue.fm/archives/8802) [[Code]](https://github.com/bojone/KgCLUE-bert4keras/tree/main)
+- **Seq2Seq+Prefix trie.**
+
+  [[Blog]](https://kexue.fm/archives/8802) [[Code]](https://github.com/bojone/KgCLUE-bert4keras/tree/main)
 
 

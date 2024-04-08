@@ -1,0 +1,8 @@
+{
+  "no_sample": false,
+  "min_length": 1,
+  "max_length": 200,
+  "temperature": 0.18,
+  "top_k": 10,
+  "top_p": 0.9
+}

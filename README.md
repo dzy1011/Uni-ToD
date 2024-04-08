@@ -6,11 +6,12 @@ This repository contains the official `PyTorch` implementation of AAAI 2024 pape
 
 AAAI 2024. [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/29745)
 
-## We will update the code within two weeks
 
 ## Abstract
 
 Retrieving appropriate records from the external knowledge base to generate informative responses is the core capability of end-to-end task-oriented dialogue systems (EToDs). Most of the existing methods additionally train the retrieval model or use the memory network to retrieve the knowledge base, which decouples the knowledge retrieval task from the response generation task, making it difficult to jointly optimize and failing to capture the internal relationship between the two tasks. In this paper, we propose a simple and unified generative model for task-oriented dialogue systems, which recasts the EToDs task as a single sequence generation task and uses maximum likelihood training to train the two tasks in a unified manner. To prevent the generation of non-existent records, we design the prefix trie to constrain the model generation, which ensures consistency between the generated records and the existing records in the knowledge base. Experimental results on three public benchmark datasets demonstrate that our method achieves robust performance on generating system responses and outperforms the baseline systems. 
+
+![image](imgs/exmodel.png)
 
 ## Architecture
 
@@ -49,7 +50,7 @@ python eval.py --generate <path to the saved model> --dataset <dataset name>  --
 e.g. CUDA_VISIBLE_DEVICES=1 python eval.py --generate save/incar --dataset incar --generation_params_file config/gpt2/generation_params.json --eval_dataset test  --output_file output_incar.json
 ```
 
-Due to some stochastic factors(e.g., GPU and environment), it maybe need to slightly tune the hyper-parameters using grid search to reproduce the results reported in our paper. You can download the fine-tuned model from the following link [model_incar](https://ojs.aaai.org/index.php/AAAI/article/view/29745).
+Due to some stochastic factors(e.g., GPU and environment), it maybe need to slightly tune the hyper-parameters using grid search to reproduce the results reported in our paper. You can download the fine-tuned model from the following link [model_incar](https://pan.baidu.com/s/1XQL_bnD0wb6nmPTN5yJcIg?pwd=4drk).
 
 
 ## Citation
@@ -86,5 +87,7 @@ We are highly grateful for the public code of the following papers, our code is 
     Xin Tian, Yingzhan Lin, Mengfei Song, Siqi Bao, Fan Wang, Huang He, Shuqi Sun, Hua Wu.
 
     EMNLP 2022. [[Paper]](https://aclanthology.org/2022.emnlp-main.489.pdf) [[Code]](https://github.com/PaddlePaddle/Knover/tree/develop/projects/Q-TOD)
+
+[[Blog]](https://kexue.fm/archives/8802) [[Code]](https://github.com/bojone/KgCLUE-bert4keras/tree/main)
 
 
